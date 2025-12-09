@@ -1,0 +1,72 @@
+{
+  "popular": [
+    {
+      "id": 1,
+      "title": "The Gorge",
+      "poster": "cover1"
+    },
+    {
+      "id": 2,
+      "title": "Inside Out 2",
+      "poster": "cover2"
+    },
+    {
+      "id": 3,
+      "title": "Borderlands",
+      "poster": "cover3"
+    }
+  ],
+
+  "recommended": [
+    {
+      "id": 4,
+      "title": "Red One",
+      "poster": "cover4"
+    },
+    {
+      "id": 5,
+      "title": "Interstellar",
+      "poster": "cover5"
+    },
+    {
+      "id": 6,
+      "title": "Deadpool & Wolverine",
+      "poster": "cover6"
+    },
+    {
+      "id": 7,
+      "title": "Mufasa: The Lion King",
+      "poster": "cover7"
+    },
+    {
+      "id": 8,
+      "title": "Moana 2",
+      "poster": "cover8"
+    },
+    {
+      "id": 9,
+      "title": "Wonka",
+      "poster": "cover9"
+    },
+    {
+      "id": 10,
+      "title": "Jumanji: The Next Level",
+      "poster": "cover10"
+    },
+    {
+      "id": 11,
+      "title": "Avatar: The Way of Water",
+      "poster": "cover11"
+    },
+    {
+      "id": 12,
+      "title": "Kill Bill Vol. 1",
+      "poster": "cover12"
+    },
+    {
+      "id": 13,
+      "title": "In Time",
+      "poster": "cover13"
+    }
+  ]
+}

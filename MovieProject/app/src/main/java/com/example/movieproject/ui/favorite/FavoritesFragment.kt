@@ -1,0 +1,45 @@
+package com.example.movieproject.ui.favorite
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.movieproject.data.FavoriteManager
+import com.example.movieproject.databinding.FragmentFavoritesBinding
+import com.example.movieproject.ui.home.MovieAdapter
+
+class FavoritesFragment : Fragment() {
+
+    private var _binding: FragmentFavoritesBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentFavoritesBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val favorites = FavoriteManager.getAll()
+
+        binding.favoritesRecycler.layoutManager =
+            LinearLayoutManager(requireContext())
+
+        binding.favoritesRecycler.adapter =
+            MovieAdapter(favorites) {}
+
+        binding.emptyText.visibility =
+            if (favorites.isEmpty()) View.VISIBLE else View.GONE
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
